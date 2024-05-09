@@ -77,7 +77,7 @@ Locate all HTTPS packets from a capture not containing a certain IP address:
 
 
 
-Outcome:
+## Outcome:
 This project will result in a comprehensive portfolio piece demonstrating proficiency in network traffic analysis using Wireshark on Ubuntu. It showcases the ability to install, configure, and effectively use Wireshark for capturing and analyzing network packets, making it a valuable asset for networking and cybersecurity roles.
 
 
