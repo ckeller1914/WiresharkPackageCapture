@@ -5,9 +5,9 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 ## Tools Used:
 
--Ubuntu
+	-Ubuntu
 
--Wireshark
+	-Wireshark
 
 ## Tasks:
 
@@ -20,7 +20,9 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 	1b) Wireshark should not be run as superuser for security reasons.
 
-	1c) Add the current user to the Wireshark group for packet capture capabilities: *sudo usermod -aG wireshark $USER*.
+	1c) Add the current user to the Wireshark group for packet capture capabilities: 
+ 
+ 		-sudo usermod -aG wireshark $USER
 
 ![SudoMod](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/36cd462c-c71f-4908-92ce-8be1fc787fe7)
 
@@ -55,7 +57,9 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 ### Task 3: Filtering HTTPS Packets:
 
 
-	3a) Use a display filter to detect HTTPS packets: *tcp.port==443*.
+	3a) Use a display filter to detect HTTPS packets: 
+ 
+ 		-tcp.port==443
 
 ![443](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/8388b654-fb91-4364-8700-642e19097112)
 
