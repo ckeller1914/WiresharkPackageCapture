@@ -72,26 +72,36 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 	4b) Utilize conditional statements to include or exclude packets based on IP addresses.
 
-	4c) Use a TLS handshake filter to detect website visits: *tls.handshake.type==1*
+	4c) Use a TLS handshake filter to detect website visits: 
+ 
+ 		-tls.handshake.type==1
 
 ![Handshake1](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/1a9f85df-ccd9-4f30-ae7b-5aeb6dabe6dc)
 
 
-	4d) Identify the IP address of a specific website and filter packets using *ip.addr==142.251.16.104*
+	4d) Identify the IP address of a specific website and filter packets using addr:
+ 
+ 		-ip.addr==142.251.16.104
 
 ![IP ADR](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/5774d63c-510e-4448-8a86-6d6e8b86cb78)
 
 
-	4e) Identify the IP source of a specific website and filter packets using  *ip.scr==142.251.16.104*
+	4e) Identify the IP source of a specific website and filter packets using  
+ 
+ 		-ip.scr==142.251.16.104
 
 ![IP SCR](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/1ff67b92-2eec-491f-bbf1-d757286f2248)
 
 
-	4f) Identify the IP destination of a specific website and filter packets using *ip.dst==142.251.16.104*
+	4f) Identify the IP destination of a specific website and filter packets using 
+ 
+ 		-ip.dst==142.251.16.104
 
 ![IP DST](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/fb826ba1-1076-4c77-ba46-13292a316744)
 
-	4g) Tailor statements to filter multiple conditional: *ip.addr==142.251.16.104 or tcp.port==443* (This filters specific address or anything using HTTPS)
+	4g) Tailor statements to filter multiple conditional: (This filters specific address or anything using HTTPS)
+ 
+ 		-ip.addr==142.251.16.104 or tcp.port==443 
 
 ![IP Or](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/e0d8064f-4c50-43d3-baa8-361c86bb40fc)
 
@@ -101,12 +111,16 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 
 
-	5a) Create a filter to display all HTTPS packets while excluding packets from a specific IP address. *!(ip.addr==142.251.16.104) or tcp.port==443*
+	5a) Create a filter to display all HTTPS packets while excluding packets from a specific IP address. 
+ 
+ 		!(ip.addr==142.251.16.104) or tcp.port==443
 
-		*![Not IP or](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/2d5408f8-b0d7-4e9a-b849-220c24bb33db)*
+*![Not IP or](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/2d5408f8-b0d7-4e9a-b849-220c24bb33db)*
 
 
-	5b) Create a filter to exclude all HTTPS packets and packets from a specific IP address. *!(ip.addr==142.251.16.104) or (tcp.port==443)*
+	5b) Create a filter to exclude all HTTPS packets and packets from a specific IP address. 
+ 
+ 		!(ip.addr==142.251.16.104) or (tcp.port==443)
 	- 
 
 ![Screenshot (50)](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/e96fe3dc-dad3-46c1-bc28-49603bf73bb0)
