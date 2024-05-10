@@ -1,4 +1,4 @@
-# Project Title: Wireshark Package Capture
+# Project Title: Wireshark Packet Capture
 
 ## Overview:
 This project demonstrates the setup and usage of Wireshark on Ubuntu for capturing and analyzing network traffic. It includes tasks such as installing Wireshark, capturing Ethernet traffic, filtering HTTPS packets, detecting website visits, and applying advanced display filters. The project aims to showcase proficiency in network analysis tools and techniques.
