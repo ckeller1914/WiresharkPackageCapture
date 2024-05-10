@@ -13,16 +13,14 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 ### Task 1: Installation and Setup of Wireshark:
 
-	1a) Use the add-apt-repository command: *sudo add-apt-repository ppa:wireshark-dev/stable*.
-
-	1b) Install Wireshark on a virtual machine using Ubuntu
+	1a) Install Wireshark on a virtual machine using Ubuntu
 
 ![DL Wireshark](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/09db9ccd-a764-4c6a-9078-f33f5a626244)
 
 
-	1c) Wireshark should not be run as superuser for security reasons.
+	1b) Wireshark should not be run as superuser for security reasons.
 
-	1d) Add the current user to the Wireshark group for packet capture capabilities: *sudo usermod -aG wireshark $USER*.
+	1c) Add the current user to the Wireshark group for packet capture capabilities: *sudo usermod -aG wireshark $USER*.
 
 ![SudoMod](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/36cd462c-c71f-4908-92ce-8be1fc787fe7)
 
