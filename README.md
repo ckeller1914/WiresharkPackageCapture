@@ -29,16 +29,16 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 ### Task 2: Starting Packet Capture on Ethernet Port:
 
-	2a) Clear browser cache then start packet capture on the Ethernet interface 
+	2a) Clear cache in user's browser settings. 
 
 ![ClearCache](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/50cfad92-e0de-446c-ae7f-2ccb2e7a00cd)
 
-	2b) Demonstrate the ability to capture Ethernet network traffic on the server.
+	2b) After installation pull up Wireshark to run a packet scan.
 
 ![startscan](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/87e81fb2-946e-446c-8b99-d71a698174f0)
 
 
-	2c) Identify the wired interface for Ethernet packet capture.
+	2c) Start scan then monitor the network traffic.
 
 ![PackCapt1](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/d9979495-bf8c-4159-8ad7-8762bf7d0183)
 
@@ -79,21 +79,21 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 ![Handshake1](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/1a9f85df-ccd9-4f30-ae7b-5aeb6dabe6dc)
 
 
-	4d) Identify the IP address of a specific website and filter packets using *ip.addr*. IP #####
+	4d) Identify the IP address of a specific website and filter packets using *ip.addr==142.251.16.104*
 
 ![IP ADR](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/5774d63c-510e-4448-8a86-6d6e8b86cb78)
 
 
-	4e) Identify the IP source of a specific website and filter packets using *ip.scr*. IP#######
+	4e) Identify the IP source of a specific website and filter packets using  *ip.scr==142.251.16.104*
 
 ![IP SCR](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/1ff67b92-2eec-491f-bbf1-d757286f2248)
 
 
-	4f) Identify the IP destination of a specific website and filter packets using *ip.dst*. ip########
+	4f) Identify the IP destination of a specific website and filter packets using *ip.dst==142.251.16.104*
 
 ![IP DST](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/fb826ba1-1076-4c77-ba46-13292a316744)
 
-	4g) Tailor statements to filter multiple conditional: ip.addr==162.159.61.4 or tcp.port==443 (This filters specific address or anything using HTTPS)
+	4g) Tailor statements to filter multiple conditional: *ip.addr==142.251.16.104 or tcp.port==443* (This filters specific address or anything using HTTPS)
 
 ![IP Or](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/e0d8064f-4c50-43d3-baa8-361c86bb40fc)
 
@@ -103,12 +103,12 @@ This project demonstrates the setup and usage of Wireshark on Ubuntu for capturi
 
 
 
-	5a) Create a filter to display all HTTPS packets while excluding packets from a specific IP address. IP ######
+	5a) Create a filter to display all HTTPS packets while excluding packets from a specific IP address. *!(ip.addr==142.251.16.104) or tcp.port==443*
 
 		*![Not IP or](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/2d5408f8-b0d7-4e9a-b849-220c24bb33db)*
 
 
-	5b) Create a filter to exclude all HTTPS packets and packets from a specific IP address. IP ######
+	5b) Create a filter to exclude all HTTPS packets and packets from a specific IP address. *!(ip.addr==142.251.16.104) or (tcp.port==443)*
 	- 
 
 ![Screenshot (50)](https://github.com/ckeller1914/WiresharkPackageCapture/assets/116524804/e96fe3dc-dad3-46c1-bc28-49603bf73bb0)
